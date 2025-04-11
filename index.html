@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>HCEA Salary Scales</title>
+    <meta name="description" content="Calculate salary for upcoming contract">
+    <meta name="author" content="Matt Braddock">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-top:2%;">HCEA Salary Calculator</h1>
+        <details>
+            <summary role="button">Certificated Staff</summary>
+            <div class="grid">
+                <div>
+                    <label for="cert-scale">Scale</label>
+                    <select name="cert-scale" id="cert-scale" onchange="calc()">
+                        <option value="4" selected>10 Month Teacher</option>
+                        <option value="3">10 Month Special Education Teacher</option>
+                        <option value="2">10 Month Related Service Provider</option>
+                        <option value="1">11 Month Teacher</option>
+                        <option value="0">11 Month Related Service Provider</option>
+                        <option value="0">Other Certificated</option>
+                    </select>
+                </div>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
